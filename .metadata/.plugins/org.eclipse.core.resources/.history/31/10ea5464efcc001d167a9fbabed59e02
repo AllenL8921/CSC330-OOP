@@ -1,0 +1,14 @@
+
+public abstract class Player {
+
+	Pokemon member;
+	Item item;
+	
+	public Player(Pokemon p, Item item) {
+		this.member = p;
+		this.item = item;
+	}
+	
+	public abstract void run();
+	
+}

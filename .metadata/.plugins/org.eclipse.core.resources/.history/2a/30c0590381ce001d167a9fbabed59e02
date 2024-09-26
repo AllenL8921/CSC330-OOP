@@ -1,0 +1,19 @@
+
+public class OranBerry implements Item{
+	private boolean inBattle;
+	private boolean isUsed;
+	
+	//heals the pokemon by 10 hp
+	public void use(Pokemon p) {
+		p.hitPoints += 10;	
+	}
+
+	public boolean isInBattle() {
+		return inBattle;
+	}
+
+	public void setInBattle(boolean inBattle) {
+		this.inBattle = inBattle;
+	}
+
+}

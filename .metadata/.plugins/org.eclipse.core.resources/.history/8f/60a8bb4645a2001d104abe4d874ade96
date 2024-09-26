@@ -1,0 +1,10 @@
+public class ComplexRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Complex obj = new Complex(10, 10);
+	}
+	
+	System.out.println(obj.print())
+
+}

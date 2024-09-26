@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+
+public class PokemonRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Attack> charizardAttacks = null;
+		ArrayList<Attack> blastoiseAttacks;
+
+		
+		Charizard charglizzy = new Charizard("Charmander", charizardAttacks, 266, 155);
+
+	}
+
+}

@@ -1,0 +1,58 @@
+
+public class Complex {
+private double real;
+private double imag;
+
+public Complex() {}
+
+public Complex(double real, double imag) {
+	this.real = real;
+	this.imag = imag;
+}
+
+public double getReal() {
+	return real;
+}
+
+public double getImag() {
+	return imag;
+}
+
+public void setReal(double real) {
+	this.real = real;
+}
+
+public void setImag(double imag) {
+	this.imag = imag;
+}
+/**
+ * – has one parameter, another Complex object to add to this one. This method does not return a value (it updates the calling object’s variables).
+ * @param obj
+ */
+public void addComplex(Complex obj) {
+	this.real += obj.getReal();
+	this.imag += obj.getImag();
+}
+/**
+ * - has one parameter, another Complex object to subtract to this one. This method does not return a value (it updates the calling object’s variables).
+ * @param obj
+ */
+public void subtractComplex(Complex obj) {
+	this.real -= obj.getReal();
+	this.imag -= obj.getImag();
+}
+/**
+ * - has one parameter, another Complex object to multiply to this one. This method does not return a value (it updates the calling object’s variables).
+ * @param obj
+ */
+public void multiplyComplex(Complex obj) {
+	this.real *= obj.getReal();
+}
+/**
+ * prints the data in the form a + bi
+ */
+public void print() {
+	System.out.println(real + " + "  + imag + "i");
+}
+
+}

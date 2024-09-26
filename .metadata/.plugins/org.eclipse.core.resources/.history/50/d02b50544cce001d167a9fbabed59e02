@@ -1,0 +1,30 @@
+
+public abstract class Player {
+
+	private Pokemon poke;
+	private Item item;
+	
+	public Player(Pokemon p, Item item) {
+		this.setMember(p);
+		this.setItem(item);
+	}
+	
+	public abstract void run();
+
+	public Item getItem() {
+		return item;
+	}
+
+	public void setItem(Item item) {
+		this.item = item;
+	}
+
+	public Pokemon getPoke() {
+		return poke;
+	}
+
+	public void setMember(Pokemon member) {
+		this.poke = member;
+	}
+	
+}

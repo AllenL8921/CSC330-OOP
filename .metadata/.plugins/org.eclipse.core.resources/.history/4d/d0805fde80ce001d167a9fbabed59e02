@@ -1,0 +1,9 @@
+
+public class Potion implements Item{
+
+	//heals the pokemon by 20 hp
+	public void use(Pokemon p) {
+		p.hitPoints += 20;
+	}
+
+}

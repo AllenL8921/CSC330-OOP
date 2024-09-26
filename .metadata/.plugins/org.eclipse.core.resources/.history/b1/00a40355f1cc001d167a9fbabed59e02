@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class Blastoise extends Pokemon {
+
+	public Blastoise(String name, ArrayList<Attack> attackList, int hitPoints, int powerPoints) {
+		super(name, attackList, hitPoints, powerPoints);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void attack(Pokemon other, int attackIndex) {
+		
+
+	}
+
+	@Override
+	public void speak() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

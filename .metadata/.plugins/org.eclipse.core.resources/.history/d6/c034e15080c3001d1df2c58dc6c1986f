@@ -1,0 +1,16 @@
+
+public class MidtermReview {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int date, month, year;
+		date = 15;
+		month = 3;
+		year = 2023;
+		
+		String str = " ";
+		
+		str += month + "/" + date + "/" + year;
+	}
+
+}

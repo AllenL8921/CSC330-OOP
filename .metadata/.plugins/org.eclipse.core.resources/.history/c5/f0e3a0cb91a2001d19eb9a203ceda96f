@@ -1,0 +1,17 @@
+public class ComplexRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Complex obj = new Complex(3, 5);
+		Complex obj2 = new Complex(1, -2);
+
+		obj.print();
+		obj.addComplex(obj2);
+		obj.print();
+		obj.subtractComplex(obj2);
+		obj.print();
+		obj.multiplyComplex(obj2);
+		obj.print();
+	}
+	
+}

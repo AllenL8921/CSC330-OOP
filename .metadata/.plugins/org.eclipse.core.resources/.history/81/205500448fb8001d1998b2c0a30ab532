@@ -1,0 +1,9 @@
+
+public class InterfaceRunner {
+
+	public static void main(String[] args) {
+		Tree myTree = new Tree(49.7, true);
+		Squirrel phil = new Squirrel(Color.BLUE);
+	}
+	
+}

@@ -1,0 +1,8 @@
+
+public class ImaginaryNumber {
+private double real;
+private double imag;
+
+
+
+}

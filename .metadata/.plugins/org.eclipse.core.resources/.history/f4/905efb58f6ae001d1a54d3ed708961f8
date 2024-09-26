@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.io.*;
+
+
+public class UnitTest {
+	private Scanner input;
+	private ArrayList<String> answers = new ArrayList<String>();
+	
+	public UnitTest() {
+		try {
+			input = new Scanner(new File("C:\\Users\\oshiw\\eclipse-workspace\\UnitTest\\src\\answers"));
+			while(input.hasNext()) {
+				String answer = input.next();
+				answers.add(answer);
+			}
+			
+		}catch(Exception e){
+			System.out.println("Error. File was not opened!");
+			e.printStackTrace();
+		}
+	}
+	
+	public double calculateGrade(ArrayList<String> studentAnswers) {
+		double grade = 0;
+			
+		for(int i =0; i < studentAnswers.size();i++) {
+			if(answers.get(i).equals(studentAnswers.get(i))) {
+				grade++;
+			}
+		}
+		
+		return grade*100/studentAnswers.size();
+	}
+	
+}

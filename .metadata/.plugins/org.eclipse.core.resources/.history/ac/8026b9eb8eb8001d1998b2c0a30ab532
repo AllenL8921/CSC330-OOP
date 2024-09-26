@@ -1,0 +1,20 @@
+
+public class ChatGPTDrivenAI implements IEntity {
+	
+	private int laserBeamPower;
+
+	public ChatGPTDrivenAI(int 1bp){
+		setLaserBeamPower(1bp);
+	}
+	
+	public int getLazerBeamPower() {
+		return laserBeamPower;
+	}
+
+	public void setLazerBeamPower(int lazerBeamPower) {
+		this.laserBeamPower = lazerBeamPower;
+	}
+	
+	
+	
+}

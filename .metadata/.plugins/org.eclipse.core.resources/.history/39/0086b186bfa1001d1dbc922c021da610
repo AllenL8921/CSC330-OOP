@@ -1,0 +1,38 @@
+
+public class Complex {
+private double real;
+private double imag;
+
+public double getReal() {
+	return real;
+}
+
+public double getImag() {
+	return imag;
+}
+
+public void setReal(double real) {
+	this.real = real;
+}
+
+public void setImag(double imag) {
+	this.imag = imag;
+}
+
+public void addComplex(Complex obj) {
+	
+}
+
+public void subtractComplex() {
+	
+}
+
+public void multiplyComplex() {
+	
+}
+
+public void print() {
+	System.out.println(real + ' ' + imag + 'i');
+}
+
+}

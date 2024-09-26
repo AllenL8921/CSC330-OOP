@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class PokemonRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList<Attack> charizardAttacks = new ArrayList<Attack>();
+		ArrayList<Attack> blastoiseAttacks = new ArrayList<Attack>();
+		
+		
+		
+		
+		//Creating a Charizard and Blastoise object and initializing them with their HP and ATK values
+		
+		Charizard pokemon_0006 = new Charizard("fire", Charmander", charizardAttacks, 266, 155);
+		Blastoise pokemon_0009 = new Blastoise("Squirtle", blastoiseAttacks, 268, 153);
+		
+		
+	}
+
+}

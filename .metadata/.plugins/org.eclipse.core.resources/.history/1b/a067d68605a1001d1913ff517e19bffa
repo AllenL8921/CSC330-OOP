@@ -1,0 +1,14 @@
+public class Temperature {
+private double ftemp;
+
+public Temperature(double ftemp) {
+	this.ftemp = ftemp;
+}
+
+void setFahrenheit(double ftemp) {
+	this.ftemp = ftemp;
+}
+
+
+
+}

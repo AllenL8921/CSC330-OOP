@@ -1,0 +1,36 @@
+
+public class Tree implements IEntity {
+	
+	private double rootLength;
+	private boolean hasLeaves;
+
+	public Tree(double d, boolean b) {
+		// TODO Auto-generated constructor stub
+		setRootLength(d);
+		setHasLeaves(b);
+	}
+
+	public double getRootLength() {
+		return rootLength;
+	}
+
+	public void setRootLength(double rootLength) {
+		this.rootLength = rootLength;
+	}
+
+	public boolean isHasLeaves() {
+		return hasLeaves;
+	}
+
+	public void setHasLeaves(boolean hasLeaves) {
+		this.hasLeaves = hasLeaves;
+	}
+	
+	//Let's define act for the Tree class
+	public void act() {
+		// TODO Auto-generated method stub
+		System.out.println("Swaying in the wind.");
+		
+	}
+	
+}

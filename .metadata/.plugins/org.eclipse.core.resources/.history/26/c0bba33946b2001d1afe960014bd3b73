@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class DynamicData {
+	public static void main(String[] args) {
+		ArrayList<WeirdData> allData = new ArrayList<WeirdData>();
+		try {
+			Scanner input = new Scanner("C:\\Users\\oshiw\\eclipse-workspace\\MoreDynamicData\\src\\RandomData");
+			while(input.hasNext()) {
+			String name = input.next();
+			String restOfLine = input.nextLine();
+			System.out.println(restOfLine);
+			//Split data on space
+			
+			String[] data = restOfLine.split(" ");
+			ArrayList<Integer> numsFromLine = new ArrayList<Integer>();
+			
+			for(int i = 0; i < data.length -1;i++) {
+				//All wrapper classes have methods to get their values
+				//parse<DataType>
+				numsFromLine.add(Integer.parseInt(num));
+			}
+			
+			}
+			
+		}catch(Exception e) {
+			System.out.println("File not found!");
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,11 @@
+
+public class OranBerry implements Item{
+
+	@Override
+	public void use(Pokemon p) {
+		// TODO Auto-generated method stub
+		
+		
+	}
+
+}

@@ -1,0 +1,58 @@
+/**
+ * Inheritance!
+ * 
+ * Allows for the sharing of code between classes.
+ * 
+ * Also allows for the addition (extension) of this class
+ * ...adding data and functionality
+ * 
+ * the keyword in Java from inheritance is "extends"
+ * 
+ * ***IMPORTANT***
+ * Inheritance relationships are called "IS-A" relationships
+ * 
+ * For example, a Dog "IS-A" Mammal
+ * A Human "IS-A" Mammal
+ * 
+ * "IS-A" Human a Dog? no.
+ * 
+ * When a class (subclass or derived class) extends another (superclass or base class) 
+ * the child inherits all protected and public data and behavior from the parent class
+ * 
+ * THE CHILD CLASS DOES NOT GET PRIVATE DATA OR METHODS!
+ * CHILD CLASSES DO NOT INHERIT CONSTRUCTORS!!!!
+ * 
+ * @author oshiw
+ *
+ */
+
+public class CheckingAccount extends BankAccount{
+	
+	private double overDraftFee;
+	private double minBalance;
+	
+	public CheckingAccount(double bal, int i, String o, double fee, double mb) {
+		//balance = bal; //NO - balance is private in BankAccount
+		//Although this class does not inherit constructors, we can use them!!!
+		//the keyword we use for "using" parent stuffs is "super"
+		//If I am to use a parent's constructor, it must be the first line in a child constructor.
+		super(bal, i, o);//balance, id, and owner will be assigned values!
+		overDraftFee = fee;
+		minBalance = mb;
+	}
+	
+	//METHOD OVERRIDING!!!
+	//
+	//It is the total changing or amending the behavior of a parent's method
+	//
+	//The method header (signatures) must be the same as the parent's method
+	//
+	public void withdraw(double amt) {
+	//You can call a parent's method inside an overriding method
+		super.withdrawal(amt); //<--- super keyword!
+		if(getBalance() < minBalance) {
+			System.out.println("How dare you dip  below your minimum balance!");
+		}
+	}
+	
+}

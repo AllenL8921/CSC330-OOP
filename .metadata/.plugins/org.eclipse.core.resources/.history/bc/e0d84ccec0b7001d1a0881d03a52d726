@@ -1,0 +1,19 @@
+
+public class Faculty extends UEmployee {
+	private String departmentName;
+
+	public Faculty() {
+		super("John Doe", 0.00);
+		departmentName = "None";
+	}
+	
+	public String getDepartmentName() {
+		return departmentName;
+	}
+
+	public void setDepartmentName(String departmentName) {
+		this.departmentName = departmentName;
+	}
+	
+	
+}

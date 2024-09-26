@@ -1,0 +1,17 @@
+
+public class CollectionsRunner {
+
+	public static void main(String[] args) {
+		//1-D arrays!
+		int[] myNums = new int[5];
+	
+		//Random numbers!
+		//Java - Math.random();
+		//Math.random() returns a double in the range [0.0,1.0]
+		//to make it make sense:
+		//cast to ints
+		//int value = (int)(Math.random() * (max - min)) + min;
+		//If I want a d6 roll (die)
+		int dieRoll = (int)(Math.random() * 6) + 1;
+	}
+}

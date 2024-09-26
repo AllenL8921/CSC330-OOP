@@ -1,0 +1,47 @@
+
+public class Complex {
+private double real;
+private double imag;
+
+public Complex() {}
+
+public Complex(double real, double imag) {
+	this.real = real;
+	this.imag = imag;
+}
+
+public double getReal() {
+	return real;
+}
+
+public double getImag() {
+	return imag;
+}
+
+public void setReal(double real) {
+	this.real = real;
+}
+
+public void setImag(double imag) {
+	this.imag = imag;
+}
+
+public void addComplex(Complex obj) {
+	this.real += obj.getReal();
+	this.imag += obj.getImag();
+}
+
+public void subtractComplex(Complex obj) {
+	this.real -= obj.getReal();
+	this.imag -= obj.getImag();
+}
+
+public void multiplyComplex(Complex obj) {
+	this.real *= obj.getReal();
+}
+
+public void print() {
+	System.out.println(real + " + "  + imag + "i");
+}
+
+}

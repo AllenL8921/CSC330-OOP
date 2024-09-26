@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+
+public abstract class Pokemon {
+	String type;
+	String name;
+	ArrayList<Attack> attackList;
+	int hitPoints;
+	int powerPoints;
+	
+	public Pokemon(String type, String name, ArrayList<Attack> attackList, int hitPoints, int powerPoints) {
+		this.name = name;
+		this.attackList = attackList;
+		this.hitPoints = hitPoints;
+		this.powerPoints = powerPoints;
+	}
+	
+	public abstract void attack(Pokemon other, int attackIndex);
+	public abstract void speak();	
+}

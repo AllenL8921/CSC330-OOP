@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+
+public class Charizard extends Pokemon {
+
+	public Charizard(String type, String name, ArrayList<Attack> attackList, int hitPoints, int powerPoints) {
+		super(type, name, attackList, hitPoints, powerPoints);
+		
+	}
+
+	@Override
+	public void attack(Pokemon other, int attackIndex) {
+		int damage = 0;
+		
+		// if the attack the pokemon is trying to use has PP, then it will use the move
+		if(attackList.get(attackIndex).getPowerPoints() > 0) {
+			
+			if(attackList.get(attackIndex).getType().toLowerCase() == "fire" && other.type.toLowerCase() == "grass") {
+				damage = 2 * (attackList.get(attackIndex).getBaseDamage());
+				attackList.get(attackIndex).getPowerPoints();
+			}else {
+				
+			}
+		}
+		
+		if(other.hitPoints > 0) {
+			other.hitPoints -= damage;
+		}else {
+			System.out.println("The opposing pokemon has fainted.");
+		}
+		
+	}
+
+	@Override
+	public void speak() {
+		System.out.println("charglizzy");
+	}
+
+}

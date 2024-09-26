@@ -1,0 +1,15 @@
+
+public class ComputerPlayer extends Player {
+
+	public ComputerPlayer(Pokemon p, Item item) {
+		super(p, item);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

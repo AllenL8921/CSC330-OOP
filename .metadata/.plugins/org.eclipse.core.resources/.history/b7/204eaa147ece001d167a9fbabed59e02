@@ -1,0 +1,57 @@
+import java.util.ArrayList;
+
+public class PokemonRunner {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Attack> charizardAttacks = new ArrayList<Attack>();
+		ArrayList<Attack> blastoiseAttacks = new ArrayList<Attack>();
+		
+		//Creating attacks that will be added to charizard's attack list
+		Attack FireBlast = new Attack("Burn", 15, "fire", 100);
+		Attack AirSlash = new Attack("Sharp Air", 15, "flying", 90);
+		
+		//Creating a Charizard and Blastoise object and initializing them with their HP and ATK values
+		
+		Charizard pokemon_0006 = new Charizard("fire", "Charmander", charizardAttacks, 266, 155, 100);
+		Blastoise pokemon_0009 = new Blastoise("water", "Squirtle", blastoiseAttacks, 268, 153, 78);
+		
+		//Creating item objects
+		
+		OranBerry item1 = new OranBerry();
+		Potion item2 = new Potion();
+		//Creating a HumanPlayer and ComputerPlayer object
+		//
+		
+		HumanPlayer p1 = new HumanPlayer(pokemon_0006, item2);
+		ComputerPlayer c1 = new ComputerPlayer(pokemon_0009, item1);
+		
+		boolean gameOver = false;
+		
+		while(!gameOver) {
+			
+			if(p1.getPoke().hitPoints > 0 && c1.getPoke().hitPoints > 0){
+				gameOver = true; // once a pokemon has reached 0 hp, the battle is over
+			}
+			
+			if(p1.getPoke().speed > c1.getPoke().speed) {
+				//if p1 is faster, p1 will go first
+				p1.run(c1);
+				c1.run(p1);
+			}else if(p1.getPoke().speed == c1.getPoke().speed) {
+				//if there is a speed tie, then its going to a 50/50 between which player goes first
+				if((int)Math.random() > 0.5) {
+					p1.run(c1);
+				}else {
+					c1.run(p1);
+				}
+				
+			}else {// the second player is faster
+				c1.run(c1);
+				p1.run(c1);
+			}
+		}// end of while loop
+		
+	}
+
+}

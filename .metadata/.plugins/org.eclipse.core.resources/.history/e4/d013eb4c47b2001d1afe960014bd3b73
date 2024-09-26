@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+public class WeirdData {
+	private ArrayList<Integer> nums;
+	private String name;
+	
+	public WeirdData(String n, ArrayList<Integer> list) {
+		nums = list;
+		name = n;
+	}
+
+	public String getName() {
+		return name;
+	}
+	
+	public String toString() {
+		String s = "";
+		s += "Name: " + name + "\n";
+		s += "Data: ";
+		for(int i : nums) {
+			s += i + " ";
+		}
+		
+		s+= "\n";
+		return s;
+	}
+}

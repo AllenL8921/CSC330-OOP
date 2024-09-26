@@ -1,0 +1,10 @@
+
+public class Quickclaw implements Item {
+
+	@Override
+	public void use(Pokemon p) {
+		
+		
+	}
+
+}

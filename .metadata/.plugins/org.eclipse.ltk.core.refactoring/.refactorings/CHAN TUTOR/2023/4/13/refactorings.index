@@ -1,0 +1,9 @@
+1680365642691	Delete element
+1680366320662	Rename type 'Moves'
+1680367369166	Encapsulate field 'attackValue'
+1680367379100	Encapsulate field 'type'
+1680367384750	Encapsulate field 'powerPoints'
+1680367389881	Encapsulate field 'accuracy'
+1680367468611	Encapsulate field 'weakness'
+1680367472332	Encapsulate field 'strength'
+1680367754584	Rename type 'Attacks'

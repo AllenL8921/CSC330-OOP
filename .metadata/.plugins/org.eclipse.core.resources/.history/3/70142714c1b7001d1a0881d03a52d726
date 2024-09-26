@@ -1,0 +1,8 @@
+
+public class Staff extends UEmployee {
+	private String jobTitle;
+	
+	public Staff() {
+		jobTitle = "Unemployed";
+	}
+}

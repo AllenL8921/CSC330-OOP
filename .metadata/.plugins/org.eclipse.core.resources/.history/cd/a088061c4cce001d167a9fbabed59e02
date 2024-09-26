@@ -1,0 +1,33 @@
+
+public class HumanPlayer extends Player {
+	
+
+	public HumanPlayer(Pokemon p, Item item) {
+		super(p, item);
+	}
+
+	@Override
+	public void run() {
+		int choice = 0;
+		System.out.println("Choose an attack: ");
+		for(int i = 0; i < super.getPoke().attackList.size();i++) {
+			System.out.println(i+1 + ": " + super.getPoke().attackList.get(i));
+		}
+		
+		switch(choice) {
+		case 1:
+			super.getPoke().attack(getPoke(), choice-1);
+		case 2:
+			
+		case 3:
+		
+		case 4:
+			
+		default:
+			
+		}
+		
+		
+	}
+
+}

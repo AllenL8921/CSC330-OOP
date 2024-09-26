@@ -1,0 +1,23 @@
+
+public class Faculty extends UEmployee {
+	private String departmentName;
+
+	public Faculty() {
+		setDepartmentName(departmentName)
+	}
+	
+	public Faculty(String n, Double s, String dn) {
+		super(n, s);
+		departmentName = dn;
+	}
+	
+	public String getDepartmentName() {
+		return departmentName;
+	}
+
+	public void setDepartmentName(String departmentName) {
+		this.departmentName = departmentName;
+	}
+	
+	
+}

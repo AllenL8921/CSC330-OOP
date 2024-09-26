@@ -1,0 +1,21 @@
+import java.util.Random;
+
+public class ComputerPlayer extends Player {
+
+	public ComputerPlayer(Pokemon p, Item item) {
+		super(p, item);
+	}
+
+	@Override
+	public void run(Player otherTrainer) {
+		int max = 3;
+		int min = 0;
+		
+		int attackIndex = (int) Math.floor(Math.random() * (max - min + 1) + min);
+		System.out.println(attackIndex);
+		//Computer chooses an attack
+		super.getPoke().attack(otherTrainer.getPoke(), attackIndex);
+
+	}
+
+}

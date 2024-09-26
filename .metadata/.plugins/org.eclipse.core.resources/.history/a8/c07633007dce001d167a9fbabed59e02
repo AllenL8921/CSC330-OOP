@@ -1,0 +1,9 @@
+
+public class OranBerry implements Item{
+
+	@Override
+	public void use(Pokemon p) {
+		p.hitPoints += 10;	
+	}
+
+}

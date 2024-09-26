@@ -1,0 +1,16 @@
+
+public class SavingAccount extends BankAccount {
+
+	private double interestRate;
+
+	public SavingAccount() {
+		interestRate = 0;
+	}
+	
+	public SavingAccount(double bal, int i, String o, double ir) {
+		super(bal, i, o, ir);
+		interestRate = 0;
+	}
+	
+	
+}

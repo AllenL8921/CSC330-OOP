@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+
+public class Blastoise extends Pokemon {
+
+	public Blastoise(String type, String name, ArrayList<Attack> attackList, int hitPoints, int powerPoints) {
+		super(type, name, attackList, hitPoints, powerPoints);
+
+	}
+
+	@Override
+	public void attack(Pokemon other, int attackIndex) {
+		// if the attack the pokemon is trying to use has PP, then it will use the move
+		if(attackList.get(attackIndex).getPowerPoints() > 0) {
+			
+		}
+
+	}
+
+	@Override
+	public void speak() {
+		// TODO Auto-generated method stub
+		System.out.println("Glub glub");
+	}
+
+}

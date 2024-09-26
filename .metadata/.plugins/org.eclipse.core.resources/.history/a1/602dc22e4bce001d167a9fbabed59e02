@@ -1,0 +1,13 @@
+
+public class ComputerPlayer extends Player {
+
+	public ComputerPlayer(Pokemon p, Item item) {
+		super(p, item);
+	}
+
+	@Override
+	public void run() {
+
+	}
+
+}

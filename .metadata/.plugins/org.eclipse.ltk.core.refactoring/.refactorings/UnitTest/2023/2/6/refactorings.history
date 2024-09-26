@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;Student.average&apos; in &apos;Student&apos;&#x0D;&#x0A;- Original project: &apos;UnitTest&apos;&#x0D;&#x0A;- Original element: &apos;Student.average&apos;&#x0D;&#x0A;- Getter method name: &apos;getAverage&apos;&#x0D;&#x0A;- Setter method name: &apos;setAverage&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;average&apos;" flags="589830" getter="getAverage" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;{Student.java[Student^average" insertion="-1" setter="setAverage" stamp="1675987355810" version="1.0" visibility="1"/>
+</session>

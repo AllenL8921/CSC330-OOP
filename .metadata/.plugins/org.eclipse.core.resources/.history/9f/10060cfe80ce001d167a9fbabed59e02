@@ -1,0 +1,19 @@
+
+public class Potion implements Item{
+	private boolean inBattle;
+	private boolean isUsed;
+
+	//heals the pokemon by 20 hp
+	public void use(Pokemon p) {
+		p.hitPoints += 20;
+	}
+
+	public boolean isUsed() {
+		return isUsed;
+	}
+
+	public void setUsed(boolean isUsed) {
+		this.isUsed = isUsed;
+	}
+
+}

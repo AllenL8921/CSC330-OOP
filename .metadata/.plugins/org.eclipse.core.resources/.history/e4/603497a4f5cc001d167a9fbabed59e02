@@ -1,0 +1,14 @@
+
+public class HumanPlayer extends Player {
+
+	public HumanPlayer(Pokemon p, Item item) {
+		super(p, item);
+	}
+
+	@Override
+	public void run() {
+
+		
+	}
+
+}

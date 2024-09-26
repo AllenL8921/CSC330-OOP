@@ -1,0 +1,28 @@
+/**
+ * Inheritance!
+ * 
+ * Allows for the sharing of code between classes.
+ * 
+ * Also allows for the addition (extension) of this class
+ * ...adding data and functionality
+ * 
+ * the keyword in Java from inheritance is "extends"
+ * 
+ * ***IMPORTANT***
+ * Inheritance relationships are called "IS-A" relationships
+ * 
+ * For example, a Dog "IS-A" Mammal
+ * A Human "IS-A" Mammal
+ * 
+ * "IS-A" Human a Dog? no.
+ * 
+ * When a class (subclass or derived class) extends another (superclass or base class) 
+ * the child inherits all protected and public data and behavior from the parent class
+ * 
+ * @author oshiw
+ *
+ */
+
+public class CheckingAccount extends BankAccount{
+	
+}

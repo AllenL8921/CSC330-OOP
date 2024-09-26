@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+public class Charizard extends Pokemon {
+
+	public Charizard(String name, ArrayList<Attack> attackList, int hitPoints, int powerPoints) {
+		super(name, attackList, hitPoints, powerPoints);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void attack(Pokemon other, int attackIndex) {
+		// TODO Auto-generated method stub
+		if()
+
+	}
+
+	@Override
+	public void speak() {
+		// TODO Auto-generated method stub
+		System.out.println("glizzy";)
+	}
+
+}

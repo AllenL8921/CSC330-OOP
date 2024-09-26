@@ -1,0 +1,48 @@
+
+public class Attack {
+	private String attackDescription;
+	private int powerPoints;
+	private String type; 
+	private int baseDamage;
+	
+	public Attack(String attackDescription, int powerPoints, String type, int baseDamage) {
+		this.setAttackDescription(attackDescription);
+		this.setPowerPoints(powerPoints);
+		this.setType(type);
+		this.setBaseDamage(baseDamage);
+	}
+
+	public String getAttackDescription() {
+		return attackDescription;
+	}
+
+	public void setAttackDescription(String attackDescription) {
+		this.attackDescription = attackDescription;
+	}
+
+	public int getPowerPoints() {
+		return powerPoints;
+	}
+
+	public void setPowerPoints(int powerPoints) {
+		this.powerPoints = powerPoints;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public int getBaseDamage() {
+		return baseDamage;
+	}
+
+	public void setBaseDamage(int baseDamage) {
+		this.baseDamage = baseDamage;
+	}
+	
+	
+}
